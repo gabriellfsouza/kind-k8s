@@ -27,10 +27,8 @@ kubectl delete pod nginx
 Utility commands
 ```bash
 kubectl logs nginx
-kubectl port-forward
- pod/nginx -n first-app 8080:80
-kubectl top pods -n 
-first-app
+kubectl port-forward pod/nginx -n first-app 8080:80
+kubectl top pods -n first-app
 
 kubectl port-forward svc/nginx-svc 8080:80 -n first-app
 kubectl port-forward service/nginx-svc 8080:80 -n first-app
